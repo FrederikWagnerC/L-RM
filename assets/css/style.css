@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --color-light: #efefef;
+    --color-dark: #13131a;
+    --color-red: #bd4646;
+    --color-pink: #c86262;
+    --color-orange: #e79687;
+    --color-lightblue: #4d8ac7;
+    --color-green: #429975;
+    --color-mainBG: #EEEEEE;
+    --color-sectionBG: #FFFFFF;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    background-color: var(--color-mainBG);
+}
+
+main {
+    padding: 0.5rem;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* HEADER  */
+
+header {
+    /* margin: 1rem; */
+    width: 100%
+}
+
+header h1 {
+    width: 100%;
+}
+
+header img {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    background-color: var(--color-red);
+}
+
+
+/* NAV  */
+
+nav {
+    margin-bottom: 1rem;
+    background-color: var(--color-red);
+}
+
+nav>ul {
+    display: block;
+    list-style: none;
+}
+
+nav>ul>li {
+    background-color: var(--color-red);
+    padding: 0.5rem 0 0.5rem 1rem;
+    transition: 0.6s;
+}
+
+nav>ul>li:hover {
+    filter: contrast(1.5);
+}
+
+/* nav>ul>li:hover {
+    filter: contrast(1);
+} */
+
+nav>ul>li>a {
+    color: var(--color-light);
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+nav>ul>li:nth-last-child(2) {
+    background-color: var(--color-lightblue);
+}
+
+nav>ul>li:last-child {
+    background-color: var(--color-green);
+}
+
+/* ALL SECTIONS HGROUP  */
+
+section {
+    margin-bottom: 2rem;
+}
+
+section hgroup {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+section>hgroup>h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-pink);
+}
+
+section>hgroup>h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-pink);
+}
+
+/* SECTION ABOUT */
+
+#section-about>div>figure {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-sectionBG);
+    border-radius: 25px 25px 5px 5px;
+
+}
+
+#section-about>div>figure>img {
+    border-radius: 25px 25px 5px 5px;
+    margin-bottom: 1rem;
+}
+
+#section-about>div>figure>figcaption>h3 {
+    color: var(--color-pink);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#section-about>div>figure>figcaption>p {
+    margin-bottom: 1rem;
+}
+
+#section-about>div>figure>figcaption>p:last-of-type {
+    margin-bottom: 3rem;
+}
+
+#section-about>div>figure>figcaption>a {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* SECTION CLIENTS  */
+
+#section-clients>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--color-sectionBG);
+}
+
+#section-clients>div>img {
+    border-radius: 5px;
+}
+
+/* SECTION CASES  */
+
+#section-cases>div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--color-sectionBG);
+    border-radius: 10px;
+}
+
+#section-cases>div>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#section-cases img {
+    border-radius: 10px;
+}
+
+#section-cases>div>div>img {
+    cursor: pointer;
+}
+
+/* SECTION TESTIMONIALS  */
+
+#section-testimonials>div>figure {
+    position: relative;
+    padding: 1rem;
+    border-radius: 1920px 1920px 0 0;
+    background-color: var(--color-sectionBG);
+    margin-bottom: 2rem;
+}
+
+#section-testimonials>div>figure>div {
+    padding: 1rem;
+}
+
+
+#section-testimonials>div>figure>div>img {
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#section-testimonials>div>figure>figcaption>h3 {
+    color: var(--color-pink);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#section-testimonials>div>figure>figcaption>p {
+    margin-bottom: 1rem;
+}
+
+#section-testimonials>div>figure>figcaption>p:last-of-type {
+    margin-bottom: 3rem;
+}
+
+#section-testimonials>div>figure>figcaption>a {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* FOOTER  */
+
+footer {
+    background-color: var(--color-red);
+    padding: 1rem;
+}
+
+footer>div h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+footer>div a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-self: center;
+    font-size: 1.25rem;
+}
+
+footer>div li {
+    display: block;
+    align-items: center;
+    transition: 0.6s;
+    background-color: var(--color-red);
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border-radius: 100px 0 0 100px;
+}
+
+footer>div img {
+    width: 7.5%;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transition: 0.6s;
+}
+
+footer>div p {
+    align-self: center;
+}
+
+footer>div li:hover {
+    filter: contrast(1.5);
+}
+
+footer>div li:hover img {
+    transform: scale(1.2);
+}
+
+
+/* MEDIA QUERIES  */
+
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+
+    /* NAV  */
+
+    nav>ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: end;
+    }
+
+    nav>ul>li {
+        padding: 0.5rem;
+    }
+
+    nav>ul>li>a {
+        text-align: center;
+    }
+
+    /* SECTION ABOUT */
+
+    #section-about>div>figure {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    #section-about>div>figure>img {
+        margin-bottom: 0;
+    }
+
+    #section-about>div>figure>figcaption {
+        margin-top: 1rem;
+    }
+
+    #section-about>div>figure>figcaption>p {
+        font-size: 0.9rem;
+    }
+
+    #section-about>div>figure>figcaption>p:last-of-type {
+        margin-bottom: 0rem;
+    }
+
+    #section-about>div>figure>figcaption>a {
+        font-size: 0.8rem;
+    }
+
+    /* SECTION CLIENTS  */
+
+    #section-clients>div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* SECTION CASES  */
+
+    #section-cases>div>div {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    /* SECTION TESTIMONIALS  */
+
+    #section-testimonials>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    #section-testimonials>div p {
+        font-size: 0.9rem;
+    }
+
+    #section-testimonials>div a {
+        font-size: 0.8rem;
+    }
+
+    /* FOOTER  */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    /* NAV  */
+
+    nav>ul {
+        display: flex;
+    }
+
+    nav>ul li:nth-child(5) {
+        margin-left: auto;
+    }
+
+    nav>ul>li {
+        padding: 0.5rem;
+    }
+
+    nav>ul>li>a {
+        text-align: center;
+    }
+
+    /* SECTION ABOUT */
+
+    #section-about>div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    #section-about>figure {
+        display: grid;
+        gap: 1rem;
+    }
+
+    #section-about>figure>img {
+        margin-bottom: 2rem;
+    }
+
+    #section-about>figure>figcaption {
+        margin-top: 1rem;
+    }
+
+    #section-about>figure>figcaption>p {
+        font-size: 0.9rem;
+    }
+
+    #section-about>figure>figcaption>p:last-of-type {
+        margin-bottom: 0rem;
+    }
+
+    #section-about>figure>figcaption>a {
+        font-size: 0.8rem;
+    }
+
+    /* SECTION CLIENTS  */
+
+    #section-clients>div {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* SECTION CASES  */
+
+    #section-cases div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* SECTION TESTIMONIALS  */
+
+    #section-testimonials>div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    #section-testimonials>div p {
+        font-size: 0.9rem;
+    }
+
+    #section-testimonials>div a {
+        font-size: 0.8rem;
+    }
+
+    /* FOOTER  */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
